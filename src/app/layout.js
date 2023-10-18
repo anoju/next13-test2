@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 export default function RootLayout({ children }) {
   const [topics, setTopics] = useState([])
   useEffect(() => {
-    fetch('http://localhost:9999/topics').then(rep => {
+    fetch('http://localhost:9999/topics').then(resp => {
       return resp.json();
     }).then(result => {
       setTopics(result);
