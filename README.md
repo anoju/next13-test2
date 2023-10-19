@@ -37,4 +37,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
    
    
 ========================================================    
-npx json-server --port 9999 --watch db.json
+DB서버 실행:   
+```
+npx json-server --port 9999 --watch db.json  
+``` 
+   
+   
+루트경로에 .env.local 파일 생성:   
+```
+NEXT_PUBLIC_API_URL=http://localhost:9999/   
+```
